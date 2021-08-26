@@ -127,7 +127,7 @@
     --color-gray-18                : #040404;
     --color-gray-17                : #060607;
     --color-gray-16                : #080809;
-    --color-gray-15                : #0a0b0b;
+    --color-gray-15                : #160215;
     --color-gray-14                : #0c0d0d;
     --color-gray-13                : #0e0f0f;
     --color-gray-12                : #101112;
@@ -1914,7 +1914,7 @@ select {
     font-size           : var(--text-sm);
     line-height         : var(--input-line-height);
     max-width           : 100%;
-    background-color    : var(--color-gray-1);
+    background-color    : #160215;
     border              : 1px solid transparent;
     transition          : all .3s ease-in-out;
     border-radius       : var(--border-radius);
@@ -2829,10 +2829,30 @@ img.u-pull-left {
  * responsive:
  * header
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
+ @media screen and (max-width: 1920px) {
     .s-header {
-        --logo-width : 8rem;
-        top          : var(--vspace-0_5);
+        --logo-width : 32rem;
+        top          : var(--vspace-4_5);
+    }
+
+    .s-header__social {
+        top : calc(50% - var(--vspace-0_25));
+    }
+
+    .s-header__social li {
+        margin-right : 1rem;
+    }
+
+    .s-header__social svg {
+        height : var(--vspace-0_75);
+        width  : var(--vspace-0_75);
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .s-header {
+        --logo-width : 32rem;
+        top          : var(--vspace-2_5);
     }
 
     .s-header__social {
@@ -2851,7 +2871,8 @@ img.u-pull-left {
 
 @media screen and (max-width: 600px) {
     .s-header {
-        --logo-width : 7.2rem;
+        --logo-width : 24rem;
+        top          : var(--vspace-2);
     }
 
     .s-header__logo {
@@ -2865,13 +2886,14 @@ img.u-pull-left {
 
 @media screen and (max-width: 500px) {
     .s-header {
-        top : 0;
+        --logo-width : 20rem;
+        top          : var(--vspace-4);
     }
 }
 
 @media screen and (max-width: 400px) {
     .s-header {
-        --logo-width : 6rem;
+        --logo-width : 16rem;
     }
 
     .s-header__logo {
