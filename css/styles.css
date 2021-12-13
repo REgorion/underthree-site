@@ -1914,7 +1914,7 @@ select {
     font-size           : var(--text-sm);
     line-height         : var(--input-line-height);
     max-width           : 100%;
-    background-color    : #160215;
+    background-color    : #2b051b;
     border              : 1px solid transparent;
     transition          : all .3s ease-in-out;
     border-radius       : var(--border-radius);
