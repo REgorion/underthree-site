@@ -8,7 +8,11 @@ site and want to show a coming soon page in a creative way. Khronos is available
 variations: static, slideshow, and particle background.
 
 
+<<<<<<< HEAD
 124124
+13333
+=======
+>>>>>>> parent of cfc2e88 (Add 124124)
 ==================================================================================================
 
 
